@@ -1,0 +1,136 @@
+@media  (width <= 550px) {
+    body {
+        background-image: url(../img/fon/Фон_мб.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0; 
+    }
+    h1 {
+        font-size: 22px;
+    }
+
+    .info_grafic img {
+        width: 100%;
+    }
+
+
+
+
+
+  
+  .menu-wrap .menu > div {
+    height: 350vw;
+  }
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    margin-bottom: 10%;
+  }
+  .logo_burger img {
+    width: 70%;
+  }
+
+
+
+
+
+
+
+
+
+
+    header {
+        font-size: 14px;
+    }
+    .header_fon_text {
+        width: 90%;
+    }
+    .header_btn {
+        width: 60%;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+
+
+    .success {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .carusel_grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        grid-gap: 0% 0%;
+        margin-bottom: 10%;
+    }
+    .carusel_grid-1 {
+        grid-row: 1/2;
+    }
+    .carusel_grid-2 {
+        grid-row: 2/3;
+        font-size: 18px;
+    }
+    .carusel_grid-3 {
+        grid-row: 3/4;
+        font-size: 13px;
+    }
+
+
+
+    .cargo_form {
+        font-size: 15px;
+        width: 100%;
+    }
+    .cargo_form_inp {
+        width: 100%;
+        font-size: 15px;
+    }
+    .switch_text {
+        font-size: 10px;
+    }
+    .cardo_btn {
+        width: 60%;
+    }
+    .cardo_btn a {
+        font-size: 14px;
+    }
+    
+    .app_fon {
+        width: 90%;
+        font-size: 14px;
+    }
+    .app_fon_li {
+        width: 90%;
+        padding: 2%;
+        border-radius: 14px;
+    }
+    .app_img img {
+        display: none;
+    }
+    .app_img_dnw img {
+        width: 80%;
+    }
+
+    footer div {
+        line-height: 2;
+        font-size: 12px;
+    }
+    .footer_logo img {
+        width: 60%;
+    }
+    .footer_icon img {
+        width: 50%;
+    }
+    
+}

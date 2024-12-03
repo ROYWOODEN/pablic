@@ -1,0 +1,38 @@
+@media  (width <= 1200px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    h1 {
+        font-size: 27px;
+    }
+
+    .info_grafic img {
+        width: 70%;
+    }
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        
+    }
+    .nav_fixed {
+        width: 100%;
+    }
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+    
+    
+}

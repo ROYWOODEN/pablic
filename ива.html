@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav-item.selected {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+    </style>
+
+    <title>Шапка сайта</title>
+</head>
+<body>
+    <header>
+        <img src="Media_mod3/logo.png" alt="Логотип" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item selected" onclick="setSelected(this)">Главная</li>
+                <li class="nav-item" onclick="setSelected(this)">Услуги</li>
+                <li class="nav-item" onclick="setSelected(this)">Контакты</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script>
+        function setSelected(element) {
+    const items = document.querySelectorAll('.nav-item');
+    items.forEach(item => {
+        item.classList.remove('selected');
+    });
+    element.classList.add('selected');
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+@media  (width <= 768px) {
+    body {
+        background-image: url(../img/fon/Фон_мб.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0; 
+    }
+    h1 {
+        font-size: 27px;
+    }
+
+    .info_grafic img {
+        width: 70%;
+    }
+
+
+
+
+:root {
+    --primary-color: rgba(0, 0, 0, 0.76);
+    --overlay-color: rgba(0, 0, 0, 0.76);
+    --menu-speed: 0.75s;
+  }
+  
+ 
+  
+
+  
+
+  
+  .menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+  }
+  
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  
+  
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+  }
+  
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 300vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-bottom: 10%;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+    header {
+        font-size: 18px;
+    }
+    .header_fon_text {
+        width: 80%;
+    }
+    .header_btn {
+        width: 40%;
+    }
+
+
+
+    .success {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .carusel_grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 0% 0%;
+    }
+    .carusel_grid-1 {
+        grid-row: 1/2;
+    }
+    .carusel_grid-2 {
+        grid-row: 2/3;
+        font-size: 25px;
+    }
+    .carusel_grid-3 {
+        grid-row: 3/4;
+        font-size: 20px;
+    }
+
+
+    .cargo_form {
+        font-size: 15px;
+        
+    }
+    .cargo_form_inp {
+        font-size: 15px;
+    }
+    .cardo_btn {
+        width: 35%;
+    }
+    .cardo_btn a {
+        font-size: 15px;
+    }
+    
+    .app_fon {
+        width: 90%;
+        font-size: 16px;
+    }
+    .app_fon_li {
+        background-color: var(--color-black);
+        width: 80%;
+        line-height: 3;
+        padding: 2%;
+        border-radius: 16px;
+    }
+    .app_img img {
+        display: none;
+    }
+    .app_img_dnw img {
+        width: 80%;
+    }
+
+    footer div {
+        line-height: 2;
+        font-size: 15px;
+    }
+    .footer_logo img {
+        width: 70%;
+    }
+    .footer_icon img {
+        width: 30%;
+    }
+    
+}

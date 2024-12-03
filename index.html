@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/Style.css">
+
+    <link rel="icon" href="Style/truck.svg">
+
+    <link rel="stylesheet" href="Style/xl.css">
+    <link rel="stylesheet" href="Style/lg.css">
+    <link rel="stylesheet" href="Style/md.css">
+    <link rel="stylesheet" href="Style/sm.css ">
+
+
+    <title>ELVO</title>
+</head>
+<body class="text-light">
+
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul class="fw-bold">
+            <li class="logo_burger"><a href="index.html"><img src="imgs/логотип.png" alt=""></a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#cargo">Расчет доставки</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="nav_fixed">
+    <nav class="d-md-flex d-none flex-row justify-content-between align-items-center">
+        <div class="w-25">
+                <a href="index.html"><img src="imgs/логотип.png" alt=""></a>
+            
+            
+        </div>
+        <div class="w-50 fw-bold d-flex flex-row justify-content-around">
+          <span class="nav-item selected" onclick="setSelected(this)"></span>
+           <div><a class="nav-item" onclick="setSelected(this)" href="#services">Услуги</a></div>   
+           <div><a class="nav-item" onclick="setSelected(this)"  href="#advantages">Преимущества</a></div>
+           <div><a class="nav-item" onclick="setSelected(this)"  href="#reviews">Отзывы</a></div>
+           <div><a class="nav-item" onclick="setSelected(this)"  href="#cargo">Расчет доставки</a></div>
+        </div>
+        
+    </nav>
+  </div>
+    
+
+    <script>
+      function setSelected(element) {
+  const items = document.querySelectorAll('.nav-item');
+  items.forEach(item => {
+      item.classList.remove('selected');
+  });
+  element.classList.add('selected');
+}
+
+  </script>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <header class="d-flex flex-column">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="header_fon_text d-flex flex-column align-items-center text-center fw-bold"><img src="imgs/шапка_Фото.jpg" alt="">
+            Ускоренная перевозка грузов по России <br>
+            Доставка грузов сроком от 1 дня
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="d-flex justify-content-center">
+            <div class="header_btn text-center">
+                <a class="fw-bold" href="#">Оформить заявку</a>
+            </div>
+        </div>
+        
+        
+
+    </header>
+
+    
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <section>
+         <h1 class="text-center" id="services">Основные направления</h1>
+
+
+        <br><br><br><br><br>
+
+        <div class="d-flex flex-xl-row flex-column justify-content-around align-items-center">
+
+
+            <div class="card card_fon card_fon mb-3" style="width: 18rem;">
+                <img src="imgs/1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Автоперевозки</h5>
+                  <p class="card-text">Международные автомобильные перевозки грузов – это один из наиболее востребованных и быстрых способов доставки груза</p>
+                  <a href="#" class="btn btn-primary card_btn card_btn_fon fw-bold">Подробнее</a>
+                </div>
+              </div>
+    
+    
+              <div class="card card_fon mb-3" style="width: 18rem;">
+                <img src="imgs/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ЖД перевозки</h5>
+                  <p class="card-text">Многолетний опыт ЖД перевозок и наличие собственного оборудования позволяет нашим клиентам быть уверенными в безопасности перевозок на всех этапах транспортировки, а также в четком соблюдении сроков поставки.</p>
+                  <a href="#" class="btn btn-primary card_btn_fon fw-bold">Подробнее</a>
+                </div>
+              </div>
+    
+    
+              <div class="card card_fon mb-3" style="width: 18rem;">
+                <img src="imgs/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Морские грузоперевозки</h5>
+                  <p class="card-text">Мы осуществляем контейнерные перевозки любых типов груза водными путями, в том числе опасных и негабаритных. Партнерские отношения с крупными морскими линиями.</p>
+                  <a href="#" class="btn btn-primary card_btn-2 card_btn_fon fw-bold">Подробнее</a>
+                </div>
+              </div>
+    
+    
+    
+              <div class="card card_fon mb-3" style="width: 18rem;">
+                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Авиагрузоперевозки</h5>
+                  <p class="card-text">Для отправки грузов в условиях сжатых сроков мы осуществляем авиадоставку. Благодаря широкой партнерской сети мы обеспечиваем оптимальные ставки.</p>
+                  <a href="#" class="btn btn-primary card_btn-2 card_btn_fon fw-bold">Подробнее</a>
+                </div>
+              </div>
+
+
+
+        </div>
+         
+
+
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+
+    </section>
+
+
+
+
+    <section>
+      <h1 class="text-center" id="advantages">Преимущества</h1>
+      <br><br><br><br>
+
+
+      <div class="d-flex flex-row justify-content-center info_grafic">
+        <img src="imgs/Group 21.png" alt="">
+      </div>
+      
+
+
+      <br><br><br><br><br><br><br><br>
+
+    </section>
+
+
+    <section>
+
+      <div class="d-flex flex-row justify-content-center  fw-bold">
+
+        <ul class="success">
+          <li>Успех в цифрах</li>
+          <li>18 лет на рынке грузоперевозок</li>
+          <li> Более 500 000 заключенных договоров</li>
+          <li>> 1100 автомобилей</li>
+          <li>до 26 тонн грузоподъёмность</li>
+          <li>14 млн руб. ответственность по одному страховому событию</li>
+        </ul>
+        
+      </div>
+
+
+      <br><br><br><br><br><br>
+    </section>
+   
+    <section id="reviews">
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carusel_fon w-100">
+              <br><br>
+              <h1 class="text-center">Отзывы клиентов</h1>
+              <br><br><br>
+
+              <div class="carusel_grid">
+
+                <img class="carusel_grid-1 align-self-center" src="imgs/foto_otz/михаил.jpg" alt="">
+
+              <h1 class="carusel_grid-2 text-center">Михаил, ООО "ТК Турин"</h2>
+
+                <div class="carusel_grid-3">
+                  Много тысяч километров пройдено нами с Elvo. Менялись направления, объёмы, количество вопросов и задач. Не менялось одно, точнее одна-наш куратор в Elvo Анастасия  Свинцицкая. От лица нашей компании-благодарю вас Elvo. От меня лично-благодарю Анастасию за профессионализм!
+                </div>
+              </div>
+              
+
+              <br><br><br>
+
+            </div>
+
+            
+          </div>
+          <div class="carousel-item">
+            <div class="carusel_fon w-100">
+              <br><br>
+              <h1 class="text-center">Отзывы клиентов</h1>
+              <br><br><br>
+
+              <div class="carusel_grid">
+
+                <img class="carusel_grid-1 align-self-center" src="imgs/foto_otz/екатерина.jpg" alt="">
+
+              <h1 class="carusel_grid-2 text-center">Екатерина, CF</h2>
+
+                <div class="carusel_grid-3">
+                  Сотрудничаем с компанией Elvo недолго. Зарекомендовали себя только с наилучшей стороны. Профессионалы своего дела это факт! Так держать ребята! Будем продолжать сотрудничать. Отдельное спасибо менеджеру Алисе Кочетовой. Отдаём ей заказы и ни о чем не беспокоимся, от слова совсем! 100% уверенность что всё будет сделано чётко и в срок.
+                </div>
+              </div>
+              
+
+              <br><br><br>
+
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="carusel_fon w-100">
+              <br><br>
+              <h1 class="text-center">Отзывы клиентов</h1>
+              <br><br><br>
+
+              <div class="carusel_grid">
+
+                <img class="carusel_grid-1 align-self-center" src="imgs/foto_otz/андрей.jpg" alt="">
+
+              <h1 class="carusel_grid-2 text-center">Андрей</h2>
+
+                <div class="carusel_grid-3">
+                  Доброе утро! Хочу выразить благодарность! Вчера оформлялся груз в отделении Москва Юг, у менеджера Анастасии, запутался с отправителями и получателями, быстро и оперативно помогла мне разобраться в оформлении! Большое спасибо Анастасии!!!
+                </div>
+              </div>
+              
+
+              <br><br><br>
+
+            </div>
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+
+
+
+      <br><br><br><br>
+
+
+
+    </section>
+
+
+
+    <section class="d-flex flex-row justify-content-center">
+      <div class="carusel_fon w-75 p-5">
+        <br><br>
+          <h1 class="text-center" id="cargo">Расчет доставки груза</h1>
+
+          <br><br><br><br>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-md-around">
+              <div class="d-flex w-100 flex-column align-items-center">
+                
+                <select class="form-select cargo_form text-light border border-2 fw-bold" aria-label="Пример выбора по умолчанию">
+                  <option selected>Откуда</option>
+                  <option value="1">Один</option>
+                  <option value="2">Два</option>
+                  <option value="3">Три</option>
+              </select>
+              <input class="cargo_form_inp" type="text" placeholder="Введите вес (кг)">
+              <input class="cargo_form_inp" type="text" placeholder="Введите ширина (м)">
+
+
+              </div>
+              <div class="d-flex w-100 flex-column align-items-center">
+
+                <select class="form-select cargo_form text-light border border-2 fw-bold" aria-label="Пример выбора по умолчанию">
+                  <option selected>Куда</option>
+                  <option value="1">Один</option>
+                  <option value="2">Два</option>
+                  <option value="3">Три</option>
+                </select>
+                <input class="cargo_form_inp" type="text" placeholder="Введите длинна (м)">
+                <input class="cargo_form_inp" type="text" placeholder="Введите высота (м)">
+
+              </div>
+            </div>
+              
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-md-around align-items-center">
+                <div class="d-flex flex-row align-items-center ">
+                <div class="switch">
+                <input type="checkbox" name="" id="switch">
+                
+              </div>
+              <label for="switch" class="ms-4 fw-bold switch_text">Доставка до Адреса/Терминала</label>
+              </div>
+
+
+              <div class="jackdaw d-flex flex-row align-items-center w-25">
+                <input id="jackdaw" type="checkbox">
+                <label class="fw-bold ms-4 switch_text" for="jackdaw">Срочно</label>
+              </div>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-center mt-5">
+              <div class="cardo_btn fw-bold text-center">
+              <a href="#">Рассчитать</a>
+            </div>
+            </div>
+            
+            
+          </div>
+          
+
+
+          <br><br><br>
+      </div>
+
+    </section>
+
+    <br><br><br><br><br><br><br><br><br>
+    
+
+    <section class="d-flex flex-row justify-content-center">
+
+      <div class="logo-part">
+        <h1 class="text-center mb-5">Нам доверяют свой груз</h1>
+
+        <div class="d-flex flex-column flex-md-row justify-content-md-around align-items-center">
+
+        
+          <div class="d-flex flex-column align-items-center w-100">
+            <img src="imgs/logo-part/1.png" alt="">
+            <img src="imgs/logo-part/5.png" alt="">
+            <img src="imgs/logo-part/7.png" alt="">
+            <img src="imgs/logo-part/4.png" alt="">
+          </div>
+
+          <div class="d-flex flex-column align-items-center w-100">
+            <img src="imgs/logo-part/2.png" alt="">
+            <img src="imgs/logo-part/8.png" alt="">
+            <img src="imgs/logo-part/6.jpg" alt="">
+            <img src="imgs/logo-part/3.png" alt="">
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <section>
+      <div class="d-flex flex-row justify-content-center">
+        <div class="app_fon text-center fw-bold">
+        Официальное приложение  транспортной компании «Elvo». Заказывайте перевозки и управляйте ими со смартфона. Для любых отправок юридическим и частным лицам.
+      </div>
+      </div>
+      
+
+      <br><br><br>
+
+    <div class="d-flex flex-column flex-md-row justify-content-md-around align-items-center">
+
+      <div class="app_fon_li fw-bold align-self-center">
+        <ul>
+          <li>Рассчитать стоимость и сроки доставки</li>
+          <li>Оплатить перевозку</li>
+          <li>Отследить груз</li>
+          <li>Узнать ориентировочную дату прибытия</li>
+        </ul>       
+      </div>
+
+
+      <div class="app_img d-flex flex-column align-items-center">
+        <h1 class="text-center">В приложении вы сможете:</h1>
+        <img src="imgs/мобила.jpg" alt="">
+      </div>
+
+
+      <div class="app_fon_li fw-bold align-self-center">
+        <ul>
+          <li>Просматривать журнал заказов</li>
+          <li>Получать Push-уведомления</li>
+          <li>Просмотреть всю историю своих заказов</li>
+          <li>Скачать приложение</li>
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="d-flex flex-row justify-content-center app_img_dnw">
+      <img src="imgs/btn-download/Кнопки.png" alt="">
+    </div>
+      
+
+    </section>
+
+
+    <br><br><br>
+
+
+    <footer>
+      <br><br><br>
+
+      <h1 class="text-center">Контакты</h1>
+
+      <br><br>
+
+
+      <div class="d-flex flex-row justify-content-around align-items-center">
+        <div class="footer_logo">
+          <img src="imgs/логотип.png" alt="">
+        </div>
+        <div class="fw-bold">
+          196210, Санкт-Петербург, ул. Стартовая, д. 8, лит. А. <br>
+          © Транспортная компания ООО «Elvo», 2003-2021 <br>
+          express@elvo.ru <br>
+           <u>8 800 100-8000</u> 
+        </div>
+      </div>
+
+
+      <div class="d-flex flex-row justify-content-center mt-5 footer_icon">
+        <img src="imgs/icon/Соц сети 1.png" alt="">
+      </div>
+
+      <br>
+
+    </footer>
+    
+
+    
+
+
+<!-- <br><br><br><br><br><br><br><br><br><br> -->
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
